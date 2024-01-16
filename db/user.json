@@ -1,0 +1,9 @@
+{
+  "user": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "johndoesmuch@gmail.com", 
+    "favoriteColor": "blue",
+    "birthday": "1980-01-01"
+  }
+}

@@ -1,10 +1,9 @@
 {
-  "contact": {
-    "firstName": "John",
-    "lastName": "Lenon",
-    "email": "johnLenon@bettles.com",
-    "favoriteColor": "blue",
-    "birthday": "1940-10-09"
+  "contact2": {
+    "firstName": "Paul",
+    "lastName": "McCartney",
+    "email": "PaulMcCart@bettles.com",
+    "favoriteColor": "green",
+    "birthday": "1942-06-18"
   }
 }
-

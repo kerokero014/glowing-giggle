@@ -1,9 +1,7 @@
 {
-  "contact2": {
-    "firstName": "George",
-    "lastName": "Harrison",
-    "email": "georgiHarson@bettles.com",
-    "favoriteColor": "red",
-    "birthday": "1943-02-25"
-  }
+  "firstName": "George",
+  "lastName": "Harrison",
+  "email": "georgiHarson@bettles.com",
+  "favoriteColor": "red",
+  "birthday": "1943-02-25"
 }

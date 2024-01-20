@@ -1,9 +1,7 @@
 {
-  "contact":{
-    "firstName": "John",
-    "lastName": "Lenon",
-    "email": "JhonnyLeny@bettles.com",
-    "favoriteColor": "blue",
-    "birthday": "1940-10-09"
-  }
+  "firstName": "John",
+  "lastName": "Lenon",
+  "email": "JhonnyLeny@bettles.com",
+  "favoriteColor": "blue",
+  "birthday": "1940-10-09"
 }

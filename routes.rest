@@ -3,10 +3,6 @@ GET  http://localhost:8080/contacts/
 
 
 
-GET  http://localhost:8080/contacts/65ab555e6e2be6293b694ce1
-
-
-
 
 
 

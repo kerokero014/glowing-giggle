@@ -5,19 +5,5 @@
     "email": "JhonnyLeny@bettles.com",
     "favoriteColor": "blue",
     "birthday": "1940-10-09"
-  },
-  "contact2":{
-  "firstName": "George",
-  "lastName": "Harrison",
-  "email": "georgiHarson@bettles.com",
-  "favoriteColor": "red",
-  "birthday": "1943-02-25"
-  },
-  "contact3":{
-  "firstName": "Paul",
-  "lastName": "McCartney",
-  "email": "paulyney@bettles.com",
-  "favoriteColor": "green",
-  "birthday": "1942-06-18"
   }
 }

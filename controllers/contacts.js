@@ -16,6 +16,7 @@ const getAll = async (req, res, next) => {
 const getSingle = async (req, res, next) => {
   try {
     const userId = new ObjectId(req.params.id);
+    console.log('userId:', userId); // Log the userId
     const result = await mongodb.getDb().db().collection('contacts').findOne({ _id: userId });
     console.log('Retrieved single contact:', result); // Log the retrieved single contact
     res.setHeader('Content-Type', 'application/json');

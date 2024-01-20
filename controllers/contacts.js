@@ -19,6 +19,7 @@ const getSingle = async (req, res, next) => {
     console.log('userId:', userId); // Log the userId
     const result = await mongodb.getDb().db().collection('contacts').findOne({ _id: userId });
     console.log('Retrieved single contact:', result); // Log the retrieved single contact
+    
     res.setHeader('Content-Type', 'application/json');
     res.status(200).json(result);
   } catch (error) {

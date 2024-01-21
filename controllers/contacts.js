@@ -3,14 +3,13 @@ const ObjectId = require("mongodb").ObjectId;
 
 const getAll = async (req, res, next) => {
   try {
-    console.log("Before database query");
     const result = await mongodb
       .getDb()
       .db()
-      .collection('contacts')
+      .collection("contacts")
       .find()
       .toArray();
-    console.log("After database query, Result:", result);
+    console.log("Result:", result);
     res.setHeader("Content-Type", "application/json");
     res.status(200).json(result);
   } catch (error) {
@@ -27,7 +26,7 @@ const getSingle = async (req, res, next) => {
     const result = await mongodb
       .getDb()
       .db()
-      .collection('contacts')
+      .collection("contacts")
       .findOne({ _id: userId });
 
     console.log("Retrieved single contact:", result);

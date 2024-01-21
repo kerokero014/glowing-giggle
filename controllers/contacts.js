@@ -22,7 +22,7 @@ const getAll = async (req, res, next) => {
 const getSingle = async (req, res, next) => {
   try {
     const userId = new ObjectId(req.params.id);
-    console.log("userId:", userId); 
+    console.log("userId:", userId);
 
     const result = await mongodb
       .getDb()
@@ -30,7 +30,7 @@ const getSingle = async (req, res, next) => {
       .collection("contacts")
       .findOne({ _id: userId });
 
-    console.log("Retrieved single contact:", result); 
+    console.log("Retrieved single contact:", result);
 
     res.setHeader("Content-Type", "application/json");
 

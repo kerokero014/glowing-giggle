@@ -7,7 +7,7 @@ const getAll = async (req, res, next) => {
     const result = await mongodb
       .getDb()
       .db()
-      .collection("contacts")
+      .collection('contacts')
       .find()
       .toArray();
     console.log("After database query, Result:", result);
@@ -27,7 +27,7 @@ const getSingle = async (req, res, next) => {
     const result = await mongodb
       .getDb()
       .db()
-      .collection("contacts")
+      .collection('contacts')
       .findOne({ _id: userId });
 
     console.log("Retrieved single contact:", result);

@@ -3,17 +3,13 @@ const ObjectId = require("mongodb").ObjectId;
 
 const getAll = async (req, res, next) => {
   try {
-    const result = await mongodb
-      .getDb()
-      .db()
-      .collection("contacts")
-      .find()
-      .toArray();
-    console.log("Result:", result);
-    res.setHeader("Content-Type", "application/json");
-    res.status(200).json(result);
+    const result = await mongodb.getDb().db().collection('contacts').find();
+    const lists = await result.toArray();
+    
+    res.setHeader('Content-Type', 'application/json');
+    res.status(200).json(lists);
   } catch (error) {
-    console.error("Error fetching all contacts:", error);
+    console.error("Error in getAll function:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 };
@@ -26,21 +22,21 @@ const getSingle = async (req, res, next) => {
     const result = await mongodb
       .getDb()
       .db()
-      .collection("contacts")
-      .findOne({ _id: userId });
+      .collection('contacts')
+      .find({ _id: userId });
 
-    console.log("Retrieved single contact:", result);
+    const lists = await result.toArray();
 
-    res.setHeader("Content-Type", "application/json");
-
-    if (!result) {
-      console.log("Contact not found for the given ID");
-      res.status(404).json({ error: "Contact not found" });
+    res.setHeader('Content-Type', 'application/json');
+    console.log('lists:', lists);
+    
+    if (lists.length > 0) {
+      res.status(200).json(lists[0]);
     } else {
-      res.status(200).json(result);
+      res.status(404).json({ error: "User not found" });
     }
   } catch (error) {
-    console.error("Error fetching single contact:", error);
+    console.error("Error in getSingle function:", error);
     res.status(500).json({ error: "Internal Server Error" });
   }
 };

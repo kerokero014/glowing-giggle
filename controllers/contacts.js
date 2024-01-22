@@ -3,7 +3,11 @@ const ObjectId = require("mongodb").ObjectId;
 
 const getAll = async (req, res, next) => {
   try {
-    const result = await mongodb.getDb().db('contacts').collection('contacts').find();
+    const result = await mongodb
+      .getDb()
+      .db("contacts")
+      .collection("contacts")
+      .find();
     const lists = await result.toArray();
 
     res.setHeader("Content-Type", "application/json");
@@ -21,7 +25,7 @@ const getSingle = async (req, res, next) => {
 
     const result = await mongodb
       .getDb()
-      .db('contacts')
+      .db("contacts")
       .collection("contacts")
       .find({ _id: userId });
 
@@ -41,4 +45,7 @@ const getSingle = async (req, res, next) => {
   }
 };
 
-module.exports = { getAll, getSingle };
+module.exports = {
+  getAll: getAll,
+  getSingle: getSingle
+};

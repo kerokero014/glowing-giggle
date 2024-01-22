@@ -2,13 +2,15 @@
 //GET  http://localhost:8080/contacts
 
 
-//GET  http://localhost:8080/contacts/
+//GET  http://localhost:8080/contacts/65ac8eb5107bbb228c3d88be
+
 //
 //
-GET  http://localhost:8080/contacts/65ac8eb5107bbb228c3d88bf
+//GET  http://localhost:8080/contacts/65ac8eb5107bbb228c3d88bf
 //
 //
-//GET  http://localhost:8080/contacts/
+//GET  http://localhost:8080/contacts/65ac8eb5107bbb228c3d88c0
+
 
 
 

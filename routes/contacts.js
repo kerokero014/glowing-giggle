@@ -7,6 +7,6 @@ router.get('/', contactsController.getAll);
 
 router.get('/:id', contactsController.getSingle);
 
-//router.post("/contacts", contactsController.createContact);
+router.post('/', contactsController.createContact);
 
 module.exports = router;

@@ -13,7 +13,7 @@ app
   })
   .use('/', routes);
 
-// eslint-disable-next-line no-unused-vars
+  
 mongodb.initDb((err, mongodb) => {
   if (err) {
     console.log(err);

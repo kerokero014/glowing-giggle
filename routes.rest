@@ -8,6 +8,9 @@
 //GET  http://localhost:8080/contacts/65ac8eb5107bbb228c3d88c0
 
 
+//POST http://localhost:8080/contacts
+
+
 //*******OnRender*******//
 
 //GET https://cse341kjm.onrender.com/contacts

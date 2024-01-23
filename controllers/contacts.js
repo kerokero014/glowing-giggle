@@ -44,8 +44,28 @@ const getSingle = async (req, res, next) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 };
-
+//
+//const createContact = async (req, res, next) => {
+//  try{
+//    const newContact = req.body;
+//    const result = await mongodb
+//      .getDb()
+//      .db("contacts")
+//      .collection("contacts")
+//      .insertOne(newContact);
+//    console.log("result:", result);
+//
+//    res.setHeader("Content-Type", "application/json");
+//    res.status(201).json({ message: "Contact created successfully" });
+//  }
+//  catch(error){
+//    console.error("Error in createContact function:", error);
+//    res.status(500).json({ error: "Internal Server Error" });
+//  }
+//};
+//
 module.exports = {
   getAll: getAll,
   getSingle: getSingle
+  //createContact: createContact
 };

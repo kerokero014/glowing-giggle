@@ -8,7 +8,13 @@
 //GET  http://localhost:8080/contacts/65ac8eb5107bbb228c3d88c0
 
 
-//POST http://localhost:8080/contacts
+POST http://localhost:8080/contacts HTTP/1.1 content-type: application/json
+{
+    "firtsName": "Michael",
+    "lastName": "Jordan",
+     "email": "23Jordan@nike.com",
+    "favoriteColor": "blue"
+}
 
 
 //*******OnRender*******//

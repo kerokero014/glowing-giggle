@@ -13,27 +13,27 @@ GET http://localhost:8080/contacts
 //content-type: application/json
 //
 //{
-//    "firstName": "Marc",
-//    "lastName": "Anthony",
-//    "email": "salsa@yahoo.com",
-//    "favoriteColor": "purple",
-//    "birthday": "1968-09-16"
-//}
-
-
-//PUT http://localhost:8080/contacts/65b1c8b7009e11a69dc47fb2 HTTP/1.1 
-//content-type: application/json
-//    
-//{
-//    "firstName": "Cristiano",
-//    "lastName": "Ronaldo",
-//    "email": "elbicho@UEFA.com",
-//    "favoriteColor": "Golden",
+//    "firstName": "jonny",
+//    "lastName": "Bravo",
+//    "email": "Stud@yahoo.com",
+//    "favoriteColor": "black",
 //    "birthday": "1985-02-05"
 //}
 
 
-//DELETE http://localhost:8080/contacts/65b1c65e1054c79d2ba0f5fd
+//PUT http://localhost:8080/contacts/65b1cc255cf8abae16a1142b HTTP/1.1 
+//content-type: application/json
+//    
+//{
+//    "firstName": "jonny",
+//    "lastName": "Bravo",
+//    "email": "Stud@yahoo.com",
+//    "favoriteColor": "black",
+//    "birthday": "1985-02-05"
+//}
+
+
+DELETE http://localhost:8080/contacts/65b1cc255cf8abae16a1142b
 
 //DELETE http://localhost:8080/contacts/65b1c3444ad60e8de12a8e25
 

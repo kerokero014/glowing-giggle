@@ -88,29 +88,34 @@ const updateContact = async (req, res) => {
   try {
     const userId = new ObjectId(req.params.id);
     const contact = {
-      firstName: req.body.firstName,
-      lastName: req.body.lastName,
-      email: req.body.email,
-      favoriteColor: req.body.favoriteColor,
-      birthday: req.body.birthday
+      $set: {
+        firstName: req.body.firstName,
+        lastName: req.body.lastName,
+        email: req.body.email,
+        favoriteColor: req.body.favoriteColor,
+        birthday: req.body.birthday
+      }
     };
 
     const response = await mongodb
       .getDb()
       .db('contacts')
       .collection('contacts')
-      .replaceOne({ _id: userId }, contact);
+      .updateOne({ _id: userId }, contact);
 
-    if (response.acknowledged) {
-      res.status(204).json(response);
+    if (response.acknowledged && response.modifiedCount > 0) {
+      res.status(200).json({ message: 'Contact updated successfully', contact });
+    } else if (response.acknowledged && response.modifiedCount === 0) {
+      res.status(404).json({ error: 'Contact not found' });
     } else {
       throw new Error('Contact update not acknowledged');
     }
   } catch (error) {
-    console.error('Error updating contact:', error);
+    console.error('Error updating contact:', error.message);
     res.status(500).json({ error: 'Some error occurred while updating the contact.' });
   }
 }
+
 
 const deleteContact = async (req, res) => {
   try {

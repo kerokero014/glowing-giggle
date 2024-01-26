@@ -13,29 +13,27 @@ GET http://localhost:8080/contacts
 //content-type: application/json
 //
 //{
-//    "firstName": "jonny",
-//    "lastName": "Bravo",
-//    "email": "Stud@yahoo.com",
-//    "favoriteColor": "black",
+//    "firstName": "Pink",
+//    "lastName": "Panther",
+//    "email": "test@gmail.com",
+//    "favoriteColor": "pink",
 //    "birthday": "1985-02-05"
 //}
 
-
-//PUT http://localhost:8080/contacts/65b1cc255cf8abae16a1142b HTTP/1.1 
+//PUT http://localhost:8080/contacts/65b332884dac9a088dc2eb74 HTTP/1.1 
 //content-type: application/json
 //    
 //{
-//    "firstName": "jonny",
-//    "lastName": "Bravo",
-//    "email": "Stud@yahoo.com",
-//    "favoriteColor": "black",
-//    "birthday": "1985-02-05"
+//    "firstName": "Tony",
+//    "lastName": "Stark",
+//    "email": "tonystark@rich.com",
+//    "favoriteColor": "red",
+//    "birthday": "1970-05-29"
 //}
 
+//DELETE http://localhost:8080/contacts/65b332884dac9a088dc2eb74
 
-DELETE http://localhost:8080/contacts/65b1cc255cf8abae16a1142b
 
-//DELETE http://localhost:8080/contacts/65b1c3444ad60e8de12a8e25
 
 //*******OnRender*******//
 
@@ -46,3 +44,28 @@ DELETE http://localhost:8080/contacts/65b1cc255cf8abae16a1142b
 //GET https://cse341kjm.onrender.com/contacts/65ac8eb5107bbb228c3d88bf
 
 //GET https://cse341kjm.onrender.com/contacts/65ac8eb5107bbb228c3d88c0
+
+
+//POST https://cse341kjm.onrender.com/contacts HTTP/1.1 
+//content-type: application/json
+//
+//{
+//    "firstName": "Pink",
+//    "lastName": "Panther",
+//    "email": "test@gmail.com",
+//    "favoriteColor": "pink",
+//    "birthday": "1985-02-05"
+//}
+
+//PUT https://cse341kjm.onrender.com/contacts/65b1c97a987d426fe9cf8830
+//content-type: application/json
+//    
+//{
+//    "firstName": "Tony",
+//    "lastName": "Stark",
+//    "email": "tonystark@rich.com",
+//    "favoriteColor": "red",
+//    "birthday": "1970-05-29"
+//}
+
+//DELETE https://cse341kjm.onrender.com/contacts/65b1c97a987d426fe9cf8830

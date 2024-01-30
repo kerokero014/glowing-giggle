@@ -1,13 +1,5 @@
 GET http://localhost:8080/contacts
 
-//GET  http://localhost:8080/contacts/65b1bb4a7cbb4670b15e98d1
-
-//GET  http://localhost:8080/contacts/65ac8eb5107bbb228c3d88be
-
-//GET  http://localhost:8080/contacts/65ac8eb5107bbb228c3d88bf
-
-//GET  http://localhost:8080/contacts/65ac8eb5107bbb228c3d88c0
-
 
 POST http://localhost:8080/contacts HTTP/1.1 
 content-type: application/json

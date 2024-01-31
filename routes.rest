@@ -29,7 +29,7 @@
 
 //*******OnRender*******//
 
-//GET https://cse341kjm.onrender.com/contacts
+GET https://cse341kjm.onrender.com/contacts
 
 
 //POST https://cse341kjm.onrender.com/contacts HTTP/1.1 

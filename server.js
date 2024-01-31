@@ -15,7 +15,6 @@ app
   })
   .use('/', routes);
 
-
 // Start server
 mongodb.initDb((err) => {
   if (err) {

@@ -114,8 +114,7 @@ const updateContact = async (req, res) => {
     console.error('Error updating contact:', error.message);
     res.status(500).json({ error: 'Some error occurred while updating the contact.' });
   }
-}
-
+};
 
 const deleteContact = async (req, res) => {
   try {
@@ -136,7 +135,7 @@ const deleteContact = async (req, res) => {
     console.error('Error deleting contact:', error);
     res.status(500).json({ error: 'Some error occurred while deleting the contact.' });
   }
-}
+};
 
 module.exports = {
   getAll: getAll,

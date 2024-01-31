@@ -15,8 +15,9 @@ app
   })
   .use('/', routes);
 
+
 // Start server
-mongodb.initDb((err, mongodb) => {
+mongodb.initDb((err) => {
   if (err) {
     console.log(err);
   } else {

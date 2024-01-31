@@ -1,16 +1,16 @@
 GET http://localhost:8080/contacts
 
 
-POST http://localhost:8080/contacts HTTP/1.1 
-content-type: application/json
-
-{
-    "firstName": "Harry",
-    "lastName": "Potter",
-    "email": "wizardHarryP@gmagic.com",
-    "favoriteColor": "red",
-    "birthday": "1980-07-31"
-}
+//POST http://localhost:8080/contacts HTTP/1.1 
+//content-type: application/json
+//
+//{
+//    "firstName": "Harry",
+//    "lastName": "Potter",
+//    "email": "wizardHarryP@gmagic.com",
+//    "favoriteColor": "red",
+//    "birthday": "1980-07-31"
+//}
 
 //PUT http://localhost:8080/contacts/65b332884dac9a088dc2eb74 HTTP/1.1 
 //content-type: application/json

@@ -1,4 +1,4 @@
-GET http://localhost:8080/contacts
+//GET http://localhost:8080/contacts
 
 
 //POST http://localhost:8080/contacts HTTP/1.1 
@@ -31,25 +31,19 @@ GET http://localhost:8080/contacts
 
 //GET https://cse341kjm.onrender.com/contacts
 
-//GET https://cse341kjm.onrender.com/contacts/65ac8eb5107bbb228c3d88be
-
-//GET https://cse341kjm.onrender.com/contacts/65ac8eb5107bbb228c3d88bf
-
-//GET https://cse341kjm.onrender.com/contacts/65ac8eb5107bbb228c3d88c0
-
 
 //POST https://cse341kjm.onrender.com/contacts HTTP/1.1 
 //content-type: application/json
 //
 //{
-//    "firstName": "Harry",
-//    "lastName": "Potter",
-//    "email": "wizardHarryP@gmagic.com",
-//    "favoriteColor": "red",
+//    "firstName": "Princess",
+//    "lastName": "Peach",
+//    "email": "Peachespeachespeaches@bros.com",
+//    "favoriteColor": "pink",
 //    "birthday": "1980-07-31"
 //}
 
-//PUT https://cse341kjm.onrender.com/contacts/65b1c97a987d426fe9cf8830
+//PUT https://cse341kjm.onrender.com/contacts/
 //content-type: application/json
 //    
 //{

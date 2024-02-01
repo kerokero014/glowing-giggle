@@ -11,10 +11,6 @@ const app = express();
 app
   .use(cors())
   .use(bodyParser.json())
-  .use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    next();
-  })
   .use('/', routes);
 
 // Start server

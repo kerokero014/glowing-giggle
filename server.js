@@ -6,12 +6,19 @@ const port = process.env.PORT || 8080;
 const routes = require('./routes');
 const cors = require('cors');
 const app = express();
+const graphqlHTTP = require('express-graphql');
+const schema = require('./graphql/schema')
 
 // Middleware
 app
   .use(cors())
   .use(bodyParser.json())
-  .use('/', routes);
+  .use('/', routes)
+  .use('/graphql', graphqlHTTP({
+    schema: schema,
+    graphiql: true,
+  }));
+
 
 // Start server
 mongodb.initDb((err) => {
